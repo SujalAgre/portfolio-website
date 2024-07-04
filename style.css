@@ -1,0 +1,48 @@
+@font-face {
+    font-family: AszuFont;
+    src: url(/figerona/Figerona.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #CAF0F8;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+h1{
+    color: #0096C7;
+    font-size: 4em;
+    margin: auto;
+    position: relative;
+    font-family: AszuFont;
+    top: 280px;
+    left: 50px;
+    right: 200px;
+    text-shadow: 3px 3px #000000;
+}
+
+h1:hover{
+    color: #00aae2;
+    font-size: 4em;
+    margin: auto;
+    position: relative;
+    font-family: AszuFont;
+    top: 280px;
+    left: 50px;
+    text-shadow: 3px 3px #000000;
+}
+
+a{
+    text-decoration: none;
+}
+
+video{
+    padding: 210px;
+    margin-left: 270px;
+}
+
+::selection{
+    color: rgb(255, 0, 85);
+}
