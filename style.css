@@ -1,46 +1,119 @@
 @font-face {
-    font-family: AszuFont;
-    src: url(/figerona/Figerona.ttf);
+    font-family: blocked;
+    src: url(fonts/Blocked/blocked.ttf);
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url(fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face{
+    font-family: Roboto-Bold;
+    src: url(fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face{
+    font-family: Roboto-Regular;
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: NexaHeavy;
+    src: url(fonts/nexa/Nexa-Heavy.ttf);
 }
 
 body{
     margin: 0;
     padding: 0;
-    background-color: #CAF0F8;
+    background-color: #111111;
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: hidden;  
 }
 
-h1{
-    color: #0096C7;
-    font-size: 4em;
-    margin: auto;
-    position: relative;
-    font-family: AszuFont;
-    top: 280px;
-    left: 50px;
-    right: 200px;
-    text-shadow: 3px 3px #000000;
+.heading{
+    color: white;
+    text-align: center;
+    font-family: Roboto-Black;
+    font-size: xxx-large;
 }
 
-h1:hover{
-    color: #00aae2;
-    font-size: 4em;
-    margin: auto;
-    position: relative;
-    font-family: AszuFont;
-    top: 280px;
-    left: 50px;
-    text-shadow: 3px 3px #000000;
+.text{
+    color: white;
+    text-align: center;
+    font-family: Roboto-Light;
+    font-size: large;
 }
 
-a{
+.button{
     text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-family: blocked;
+    display: block;
+    position: absolute;
 }
 
-video{
-    padding: 210px;
-    margin-left: 270px;
+.buttonNexa{
+    font-family: NexaHeavy;
+    color: white;
+    font-weight: 100;
+    position: absolute;
+}
+
+.homePageText{
+    text-decoration: none;
+    color: white;
+    font-size: 4.5em;
+    font-family: blocked;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 120px;
+    margin-top: 130px;
+    margin-left: 120px;
+    line-height: 0;
+}
+
+.backButton{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-family: blocked;
+    display: block;
+    position: absolute;
+}
+
+.backButton:hover{
+    text-decoration: underline;
+    color: white;
+    font-size: 2em;
+    font-family: blocked;
+    display: block;
+    position: absolute;
+    
+}
+
+.homePageText:hover{
+    text-decoration: underline;
+    color: white;
+    font-size: 4.5em;
+    font-family: blocked;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 120px;
+    margin-top: 130px;
+    margin-left: 120px;
+}
+
+.socialImages{
+    width: 200px;
+    height: 200px;
+    margin-left: 190px;
+    margin-top: 200px;
+
 }
 
 ::selection{
