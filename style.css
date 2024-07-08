@@ -23,6 +23,10 @@
     font-family: NexaHeavy;
     src: url(fonts/nexa/Nexa-Heavy.ttf);
 }
+@font-face {
+    font-family: NexaLight;
+    src: url(fonts/nexa/Nexa-ExtraLight.ttf);
+}
 
 body{
     margin: 0;
@@ -35,28 +39,29 @@ body{
 .heading{
     color: white;
     text-align: center;
-    font-family: Roboto-Black;
+    font-family: Roboto-Bold;
+    font-weight: lighter;
     font-size: xxx-large;
 }
 
 .text{
     color: white;
     text-align: center;
-    font-family: Roboto-Light;
-    font-size: large;
+    font-family: Roboto-Regular;
+    font-size: 25px;
 }
 
 .button{
     text-decoration: none;
     color: white;
     font-size: 2em;
-    font-family: NexaHeavy;
+    font-family: NexaLight;
     display: block;
     position: absolute;
 }
 
 .buttonNexa{
-    font-family: NexaHeavy;
+    font-family: NexaLight;
     color: white;
     font-weight: 100;
     position: absolute;
