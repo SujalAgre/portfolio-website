@@ -173,3 +173,37 @@ body{
 ::selection{
     color: rgb(255, 0, 85);
 }
+
+@media (max-width:430px) {
+    .home{
+        flex-direction: column;
+        
+        
+    }
+    .home-links{
+
+        margin-right: 0px;
+        margin-left: 5px;
+        width: 300px;
+    }
+    .homePageText{
+        font-size: 3rem;
+        margin-bottom: 5px;
+        margin-top: 30px;
+        line-height: 1;
+        text-align: center; 
+    }
+    .home-image img{
+        margin-top: 25px;
+        width: 230px;
+        height: 230px;
+        
+    }
+    
+
+    
+
+
+
+}
+
