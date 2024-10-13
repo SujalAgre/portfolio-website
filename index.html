@@ -1,35 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sujal Agre</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/images/favicon/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
 </head>
+<body>
+    <div class="main">
+        <div class="upperArea">
+            <div class="theme">
+                <img id="toggleTheme" src="images/theme/dark-light-mode.png" onclick="toggleTheme()">
+            </div>
+            <div class="left-side">
+                <p>I'm <b>Sujal Agre</b> (pronounced [su-jəl aɡ-rē]; born in India) studying for a Bachelor of Computer Applications at Somaiya Vidyavihar University. I enjoy coding, making <a id="links"  href="https://www.youtube.com/@okayaszu" target="_blank">videos</a>, and creating <a id="links" href="https://www.youtube.com/@SlothSujal" target="_blank" >music</a>.
 
-<body style="display: flex; justify-content: center;">
-    <div class="home">
-        <div class="home-links">
-            <a class="homePageText" href="/pages/aboutme.html">
-                WHO AM I?</a>
+                <br>
+                -------------------------
+                <br>
 
-            <a class="homePageText" href="/pages/underconstruction.html">
-                PROJECTS
-            </a>
+                here are my projects:
 
-            <a class="homePageText" href="/pages/social.html">
-                SOCIALS
-            </a>
+                <br>
+                <br>
 
-            <a class="homePageText" href="/pages/underconstruction.html">
-                MORE..
-            </a>
+                    <a id="links" class="project-links" href="https://subu.vercel.app" target="_blank">
+                        <b>Subu</b>
+                    </a>
+
+                    <br>
+                        A Platform Empowering Women.
+                    <br>
+                    <br>
+
+
+                    <a id="links" class="project-links" href="https://github.com/SujalAgre/Discord-Status-Widget-in-Next.js" target="_blank">
+                        <b>Discord Status Widget</b>
+                    </a>
+                    <br>
+                        Easy to integrate Discord Status Widget.
+                    <br>
+                    <br>
+
+
+                    <a id="links" class="project-links" href="https://github.com/SujalAgre/portfolio-website" target="_blank">
+                        <b>Personal Portfolio Website</b>
+                    </a>
+                    <br>
+                        My personal portfolio website made using HTML, CSS and JavaScript.
+                </p>
+            </div>
+
+            <div class="right-side">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="images/profile/garba.png">
+                        <img id="slide-2" src="images/profile/cat.jpg">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="home-image">
-            <img src="images/home/cat.jpg" class="rotate">
-        </div>
+
+        <div class="lowerArea">
+            <b>
+                <a id="links" class="social-links" href="https://www.linkedin.com/in/sujalagre" target="_blank">Linkedin</a>
+
+                <a id="links" class="social-links" href="https://github.com/SujalAgre" target="_blank">Github</a>
+
+                <a id="links" class="social-links" href="https://x.com/SujalAgre" target="_blank">Twitter</a>
+            </b>
+        </div> 
     </div>
+     
 </body>
 
+<script>
+    
+    function toggleTheme() {
+        document.body.classList.toggle('dark-mode'); // Toggle dark mode
+    }
+
+</script>
 </html>

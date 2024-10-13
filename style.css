@@ -1,209 +1,243 @@
 @font-face {
-    font-family: blocked;
-    src: url(fonts/blocked/blocked.ttf);
-}
-@font-face {
-    font-family: Roboto-Black;
-    src: url(fonts/Roboto/Roboto-Black.ttf);
+    font-family: Dot;
+    src: url(font/lcddot_tr.ttf);
 }
 
-@font-face{
-    font-family: Roboto-Bold;
-    src: url(fonts/Roboto/Roboto-Bold.ttf);
-}
-@font-face {
-    font-family: Roboto-Medium;
-    src: url(fonts/Roboto/Roboto-Medium.ttf);
-}
-@font-face{
-    font-family: Roboto-Regular;
-    src: url(fonts/Roboto/Roboto-Regular.ttf);
-}
-@font-face{
-    font-family: NexaHeavy;
-    src: url(fonts/nexa/Nexa-Heavy.ttf);
-}
-@font-face {
-    font-family: NexaLight;
-    src: url(fonts/nexa/Nexa-ExtraLight.ttf);
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s; /* Smooth transitions */
+    text-shadow: 0 0 5px rgba(255,255,255,.5);
 }
 
-
-body{
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    overflow-y: hidden;
-    overflow-x: hidden;  
+.theme{
+    margin: 15px;
+    display: flex;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    transition: filter 0.5s;
 }
 
-.heading{
+.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    
+}
+
+.dark-mode #links{
     color: white;
-    text-align: center;
-    font-family: Roboto-Bold;
-    font-weight: lighter;
-    font-size: xxx-large;
+    
+    
+}
+.dark-mode .theme{
+    filter: invert(100%);
 }
 
-.text{
-    color: white;
-    text-align: center;
-    font-family: Roboto-Regular;
+.main{
+
+    width: 100%;
+    height: 50%; 
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.upperArea{
+    
+    /* border: 4px solid black; */
+    width: 99%;
+    height: 85vh; 
+    position: relative;
+    display: flex;
+
+}
+
+.left-side{
+    display:flex;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-self: center;
+
+}
+
+.left-side p{
+    margin: 20%;
+}
+
+.right-side{
+    /* margin-top: 25px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    
+}
+#images{
+    width: 500px;
+    height: 500px;
+}
+
+.lowerArea{
+    /* border: 4px solid black; */
+    width: 99%;
+    height: 10vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 30px;
+}
+
+/*links css*/
+
+.social-links{
+    margin: 25px;
+    font-size: 25px;         
+}
+
+.project-links{
     font-size: 25px;
 }
 
-.button{
+#links{
     text-decoration: none;
-    color: white;
-    font-size: 2em;
-    font-family: NexaLight;
-    display: block;
-    position: absolute;
+    color: black;
+    transition: color 0.5s;
 }
 
-.buttonNexa{
-    font-family: NexaLight;
-    color: white;
-    font-weight: 100;
-    position: absolute;
+#links:hover{
+    color: #00d4ff;
 }
 
-.homePageText{
-    text-decoration: none;
-    color: white;
-    font-size: 4.5rem;
-    font-family: NexaHeavy;
-    display: block;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 120px;
-    margin-top: 130px;
-    /* margin-left: 120px; */
-    line-height: 0;
+
+/*slider css*/
+
+.slider-wrapper{
+    position: relative;
 }
 
-.backButton{
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
-    font-family: NexaHeavy;
-    display: block;
-    position: absolute;
-}
-
-.backButton:hover{
-    text-decoration: underline;
-    color: white;
-    font-size: 2em;
-    font-family: NexaHeavy;
-    display: block;
-    position: absolute;
-    
-}
-
-.homePageText:hover{
-    text-decoration: underline;
-}
-
-.socialImages{
-    width: 200px;
-    /* height: 200px; */
-    /* margin-left: 190px;
-    margin-top: 200px; */
+.slider{
     display: flex;
-    
-    
-}
-
-.socials {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 15%;
-  
-  /* padding: 0 5%; */
-}
-
-.socials-link {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px; /* Added margin property */
-  }
-
-.home{
-    display: flex;
-    /* width: 80%; */
-    justify-content: space-evenly;
-}
-
-.home-links{
-    width: 60%;
-    margin-right: 200px;
-}
-
-.home-image img{
-    width: 400px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 3.5rem;
     height: 400px;
-    border-radius: 50%;
-    
-
-    /* margin-top: 135px; */
+    width: 400px;
+    box-shadow: 4px 4px 30px -10px rgba(0,0,0,0.75);
+    transition: box-shadow 0.5s;
 }
 
-.rotate {
-    animation: rotate 10s infinite linear;
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-
-
-.home-image{
+.slider-nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+    padding: 20px 100px;
+    transition: opacity ease-out 0.7s;
 }
 
-::selection{
-    color: rgb(255, 0, 85);
+.slider-nav:hover{
+    opacity: 1;
 }
 
-@media (max-width:430px) {
-    .home{
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    /* opacity: 0.75; */
+    transition: opacity ease 250ms;
+    padding: 2.5px;
+}
+
+.slider-nav a:hover{
+    /* opacity: 1; */
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.dark-mode .slider{
+    box-shadow: 4px 4px 37px 11px rgba(0,0,0,0.75);
+}
+
+@media (max-width: 500px) {
+    .main{
+        flex-direction: row;
+        /* width: 99%; */
+        /* height: 50%; */
+        position:relative;
+    }
+    .upperArea{
         flex-direction: column;
+        position: relative;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .left-side p{
+        margin: 15% 10% 0%;
+    }
+    .right-side{
         
-        
+        width: 100%;
+        height: 50%;
+        margin-top: 30px;        
     }
-    .home-links{
-
-        margin-right: 0px;
-        margin-left: 5px;
-        width: 300px;
+    .lowerArea{
+        margin-top: 30%;
+        height: 100%;
+        position: relative;
     }
-    .homePageText{
-        font-size: 3rem;
-        margin-bottom: 5px;
-        margin-top: 30px;
-        line-height: 1;
-        text-align: center; 
+    .social-links{
+        margin: 70px 10px;  
     }
-    .home-image img{
-        margin-top: 25px;
-        width: 230px;
-        height: 230px;
-        
+    .slider{
+        margin: 2% 0%;
+        height: 200px;
+        width: 200px;
     }
-    
+    .slider-nav{
+        padding: 0%;
+    }
+    .slider-wrapper{
+        flex-direction: r;
+    }
 
-    
+    .theme{
+        margin: 2% 0%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
-
-
+    #toggleTheme{
+        height: 30px;
+    }
 }
+
+
+
+
+
+
+
+
 
