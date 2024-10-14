@@ -106,11 +106,15 @@ body {
 #links{
     text-decoration: none;
     color: black;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
 
 #links:hover{
-    color: #00d4ff;
+    color: #A3D8FF;
+}
+
+.dark-mode #links:hover{
+    color: #94FFD8;
 }
 
 
@@ -180,7 +184,14 @@ body {
 }
 
 ::selection{
-    background-color: rgb(255, 96, 149);
+    background-color: #FDFFC2;
+    color: black;
+    transition: background-color 0.5s;
+}
+
+.dark-mode ::selection{
+    background-color: #FF76CE;
+    color: white;
 }
 
 
