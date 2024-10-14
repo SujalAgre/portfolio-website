@@ -62,7 +62,8 @@ body {
 }
 
 .left-side p{
-    margin: 20%;
+    margin: 18% 20% 0%;
+    font-size: 17px;
 }
 
 .right-side{
@@ -124,9 +125,9 @@ body {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    border-radius: 3.5rem;
-    height: 400px;
-    width: 400px;
+    border-radius: 2.5rem;
+    height: 370px;
+    width: 370px;
     box-shadow: 4px 4px 30px -10px rgba(0,0,0,0.75);
     transition: box-shadow 0.5s;
 }
@@ -178,58 +179,83 @@ body {
     box-shadow: 4px 4px 37px 11px rgba(0,0,0,0.75);
 }
 
-@media (max-width: 500px) {
-    .main{
-        flex-direction: row;
-        /* width: 99%; */
-        /* height: 50%; */
-        position:relative;
+::selection{
+    background-color: rgb(255, 96, 149);
+}
+
+
+@media (max-width: 1100px) {
+    .slider{
+        height: 350px;
+        width: 350px;
     }
+}
+
+@media (max-width: 970px){
     .upperArea{
         flex-direction: column;
-        position: relative;
     }
     .left-side{
         width: 100%;
     }
-    .left-side p{
-        margin: 15% 10% 0%;
-    }
     .right-side{
-        
-        width: 100%;
-        height: 50%;
-        margin-top: 30px;        
+        width: 0%;
+        height: 0%;
+        overflow: hidden;
     }
-    .lowerArea{
-        margin-top: 30%;
-        height: 100%;
-        position: relative;
+    .left-side p{
+        margin: 10%;
+        font-size: 20px;
     }
     .social-links{
-        margin: 70px 10px;  
-    }
-    .slider{
-        margin: 2% 0%;
-        height: 200px;
-        width: 200px;
-    }
-    .slider-nav{
-        padding: 0%;
-    }
-    .slider-wrapper{
-        flex-direction: r;
+        font-size: 30px;
     }
 
+
+}
+
+@media (max-width: 600px) {
     .theme{
-        margin: 2% 0%;
+        display: flex;
         justify-content: center;
-        align-items: center;
+        align-content: center;
+        position: relative;
+        margin: 0%;
+        height: 5px;
         width: 100%;
+        margin-top: 10px;
     }
 
     #toggleTheme{
-        height: 30px;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 490px) {
+    .theme{
+        margin-top: 10px;
+    }
+
+    .left-side p{
+        font-size: 17px;
+        margin-top: 15%;
+    }
+    
+    .project-links{
+        font-size: 20px;
+    }
+
+    .social-links{
+        font-size: 23px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 380px){
+    .social-links{
+        font-size: 20px;
+        
     }
 }
 
