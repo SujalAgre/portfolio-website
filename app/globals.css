@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: white;
+  transition: background-color 0.5s, color 0.5s;
+  text-shadow: 0 0 5px rgba(255,255,255,.5);
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0%;
+  padding: 0%;
+  line-height: 1.2;
+}
+
+.theme{
+  margin: 15px;
+  display: flex;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  transition: filter 0.5s;
+}
+
+.upper-area{
+  width: 99%;
+  height: 85vh; 
+  position: relative;
+  display: flex;
+}
+
+.left-side{
+  display:flex;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.left-side p{
+  margin: 5% 20% 0%;
+  font-size: 17px;
+}
+
+.right-side{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+
+.right-side img{
+  display: flex;
+  border-radius: 20rem;
+  height: 370px;
+  width: 370px;
+}
+
+#images{
+  width: 500px;
+  height: 500px;
+}
+
+.lowerArea{
+  /* border: 4px solid black; */
+  width: 99%;
+  height: 10vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 30px;
+}
+
+.social-links{
+  margin: 25px;
+  font-size: 25px;         
+}
+
+.project-links{
+  font-size: 25px;
+}
+
+#links{
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+#links:hover{
+  color: #A3D8FF;
+}
+
+.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #f0f0f0; /* Light text */
+}
+
+.dark-mode #links{
+  color: white;
+}
+
+.dark-mode .theme{
+  filter: invert(100%);
+}
+
+.dark-mode #links:hover{
+  color: #94FFD8;
+}
+
+.dark-mode ::selection{
+  background-color: #FF76CE;
+  color: white;
+}
+
