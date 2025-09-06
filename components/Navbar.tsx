@@ -9,7 +9,7 @@ export default function Navbar() {
   const router = useRouter();
 
   useEffect(() => {
-    const handleKeyDown = (e) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "H" || e.key === "h") {
         router.push('/');
       }
