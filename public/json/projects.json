@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Vaulta",
+    "createdOn": "May 2025",
+    "currentStatus": "Present",
+    "description": "A sleek, minimal, and secure Solana-based Web3 wallet.",
+    "image": "https://raw.githubusercontent.com/SujalAgre/vaulta/refs/heads/main/public/wallet-icon-b.png",
+    "features": [
+      "Easily send SOL to any Solana address",
+      "Instantly airdrop SOL to your wallet",
+      "Get a clear overview of your wallet activity"
+    ],
+    "links": {
+      "github": "https://github.com/SujalAgre/vaulta",
+      "website": "https://vaulta-wallet.now.sh"
+    }
+  },
+  {
+    "name": "Blurt",
+    "createdOn": "June, 2025",
+    "currentStatus": "June, 2025",
+    "description": "A mobile soundboard app that plays audio when you shake your device.",
+    "image": "https://raw.githubusercontent.com/SujalAgre/blurt/refs/heads/main/assets/icon.png",
+    "features": [
+      "Add custom sound effects (up to 10)",
+      "Plays audio on shaking device",
+      "Supports all audio formats",
+      "Experience fun times with friends while using it"
+    ],
+    "links": {
+      "github": "https://github.com/SujalAgre/blurt",
+      "website": "https://tryblurt.vercel.app/"
+    }
+  },
+  {
+    "name": "YTDL",
+    "createdOn": "May, 2025",
+    "currentStatus": "Present",
+    "description": "Terminal-based YouTube downloader with video and audio support.",
+    "image": "https://media.discordapp.net/attachments/955732908948205588/1411201811787944066/Layer_1.png?ex=68b3cb9a&is=68b27a1a&hm=83f411c6bd8ca9679d3b2989c527fee165c9d051f362886caf4201b519817846&=&format=webp&quality=lossless&width=712&height=712",
+    "features": [
+      "Downloads video and audio in the highest quality.",
+      "Supports downloading audio in WAV and MP3 formats.",
+      "Download entire YouTube channels.",
+      "Runs locally for fast and efficient downloading."
+    ],
+    "links": {
+      "github": "https://github.com/SujalAgre/ytdl",
+      "website": "https://github.com/SujalAgre/YTDL/releases/download/v1.0/YTDL.exe"
+    }
+  }
+]
