@@ -3,9 +3,23 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import Navbar from '@/components/Navbar'
+
+type Projects= {
+  name: string,
+  createdOn: string,
+  currentStatus: string,
+  description: string,
+  image: string,
+  features: string[],
+  links: {
+    github: string,
+    website: string
+  },
+}
+
 export default function page() {
 
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<Projects[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
