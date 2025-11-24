@@ -37,7 +37,7 @@
     "createdOn": "May, 2025",
     "currentStatus": "Present",
     "description": "Terminal-based YouTube downloader with video and audio support.",
-    "image": "https://media.discordapp.net/attachments/955732908948205588/1411201811787944066/Layer_1.png?ex=68b3cb9a&is=68b27a1a&hm=83f411c6bd8ca9679d3b2989c527fee165c9d051f362886caf4201b519817846&=&format=webp&quality=lossless&width=712&height=712",
+    "image": "https://files.catbox.moe/2g1pob.png",
     "features": [
       "Downloads video and audio in the highest quality.",
       "Supports downloading audio in WAV and MP3 formats.",
@@ -47,6 +47,22 @@
     "links": {
       "github": "https://github.com/SujalAgre/ytdl",
       "website": "https://github.com/SujalAgre/YTDL/releases/download/v1.0/YTDL.exe"
+    }
+  },
+  {
+    "name": "Paper",
+    "createdOn": "Jun, 2025",
+    "currentStatus": "Present",
+    "description": "An open-source AI chat platform with multi-model support.",
+    "image": "https://files.catbox.moe/wh1y89.png",
+    "features": [
+      "Ppen-source AI chat platform.",
+      "Enabled multi-model support.",
+      " local conversation storage."
+    ],
+    "links": {
+      "github": "https://github.com/SujalAgre/paper",
+      "website": "https://on-paper.vercel.app"
     }
   }
 ]
