@@ -56,9 +56,9 @@
     "description": "An open-source AI chat platform with multi-model support.",
     "image": "https://files.catbox.moe/wh1y89.png",
     "features": [
-      "Ppen-source AI chat platform.",
-      "Enabled multi-model support.",
-      " local conversation storage."
+      "Open-source AI chat platform.",
+      "Supports Multiple AI Models",
+      "Stores All Conversations Locally"
     ],
     "links": {
       "github": "https://github.com/SujalAgre/paper",
